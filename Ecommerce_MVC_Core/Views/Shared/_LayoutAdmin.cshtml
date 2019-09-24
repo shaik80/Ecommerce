@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/jquery-ui.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+
+        <link href="~/css/adminCss/style.css" rel="stylesheet" />
+        <link href="~/css/adminCss/font-awesome.css" rel="stylesheet" />
+        <link href="~/css/adminCss/SidebarNav.min.css" rel="stylesheet" />
+        <link href="~/css/adminCss/custom.css" rel="stylesheet" />
+
+        <!-- js-->
+        <script src="~/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+        
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body class="cbp-spmenu-push">
+<div class="main-content">
+    <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+		
+        <!--left-fixed -navigation-->
+        <aside class="sidebar-left">
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+                        
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1><a class="navbar-brand" asp-controller="Admin" asp-action="Index"><span class="fa fa-shopping-cart "></span>Smart Shop<span class="dashboard_text">YOUR SHOPPING PARTNER</span></a></h1>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="sidebar-menu">
+                        <li class="header">Hello Admin..!</li>
+                        <li class="treeview">
+                            <a asp-controller="Admin" asp-action="Index">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-user"></i>
+                                <span>Users</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a asp-controller="Role" asp-action="Index"><i class="fa fa-angle-right"></i> Roles</a></li>
+                                <li><a asp-controller="Users" asp-action="Index"><i class="fa fa-angle-right"></i> Users</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-laptop"></i>
+                                <span>References</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a asp-controller="Location" asp-action="CountryIndex"><i class="fa fa-angle-right"></i> Country</a></li>
+                                <li><a asp-controller="Location" asp-action="CityIndex"><i class="fa fa-angle-right"></i> City</a></li>
+                                <li><a asp-controller="Location" asp-action="LocationIndex"><i class="fa fa-angle-right"></i> Location</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-product-hunt"></i>
+                                <span>Products</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a asp-controller="Brand" asp-action="Index"><i class="fa fa-angle-right"></i> Brand</a></li>
+                                <li><a asp-controller="Units" asp-action="Index"><i class="fa fa-angle-right"></i> Unit</a></li>
+                                <li><a asp-controller="Category" asp-action="Index"><i class="fa fa-angle-right"></i> Category</a></li>
+                                <li><a asp-controller="Product" asp-action="Index"><i class="fa fa-angle-right"></i> Product</a></li>
+                                <li><a asp-controller="ProductImage" asp-action="Index"><i class="fa fa-angle-right"></i> Product Image</a></li>
+                                
+                                <li><a asp-controller="ProductStock" asp-action="Index"><i class="fa fa-angle-right"></i> Product Stock</a></li>
+                                <li><a asp-controller="ProductComments" asp-action="Index"><i class="fa fa-angle-right"></i> Product Comments</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-bar-chart"></i>
+                                <span>Orders</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a asp-controller="PaymentMethod" asp-action="Index" class="active"><i class="fa fa-angle-right"></i> Payment Method</a></li>
+                                <li><a asp-controller="Status" asp-action="Index"><i class="fa fa-angle-right"></i> Status</a></li>
+                                <li><a asp-controller="OrdersAdmin" asp-action="Index"><i class="fa fa-angle-right"></i> Orders</a></li>
+                                <li><a asp-controller="OrderDetailsAdmin" asp-action="Index"><i class="fa fa-angle-right"></i> Order Details</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </aside>
+    </div>
+    <!--left-fixed -navigation-->
+    
+ 
+
+    <!-- header-starts -->
+    
+    <div class="header-right">
+
+
+
+        <div class="profile_details">
+            <ul>
+                <li class="dropdown profile_details_drop">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <div class="profile_img">
+                            <span class="prfil-img"><img src="images/me1.jpg" height="50" width="50" alt=""> </span>
+                            <div class="user-name">
+                                <p>@User.Identity.Name</p>
+                                <span>@(User.IsInRole("Admin")?"Admin":"")</span>
+                            </div>
+                            <i class="fa fa-angle-down lnr"></i>
+                            <i class="fa fa-angle-up lnr"></i>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu drp-mnu">
+                        <li> <a data-toggle="modal" asp-controller="Users" asp-action="LogOut" data-target="#modal-popUP"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!-- //header-ends -->
+    <!-- //header-ends -->
+@Html.Partial("_Modal", new BootstrapModel { ID = "modal-popUP", AreaLabeledId = "modal-popUP-label", Size = ModalSize.Medium })
+      
+   
+
+
+<div id="page-wrapper">
+    <div class="main-content">
+        @RenderBody()
+    </div>
+</div>
+
+<environment include="Development">
+   
+    
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/jquery-ui.js" type="text/javascript"></script>
+    <script src="~/js/ModalPopup.js" type="text/javascript"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/adminJs/modernizr.custom.js"></script>
+    <!-- chart -->
+    <script src="~/js/adminJs/Chart.js"></script>
+    <!-- //chart -->
+    <!-- Metis Menu -->
+    <script src="~/js/adminJs/metisMenu.min.js"></script>
+    <script src="~/js/adminJs/pie-chart.js"></script>
+    <script src="~/js/adminJs/custom.js"></script>
+    <script src="~/js/adminJs/SidebarNav.min.js"></script>
+    
+    <script>
+        $('.sidebar-menu').SidebarNav()
+    </script>
+
+</environment>
+<environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    </script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.min.js" asp-append-version="true"></script>
+    <script src="~/js/ModalPopup.js" type="text/javascript" asp-append-version="true"></script>
+</environment>
+
+@RenderSection("Scripts", required: false)
+</body>
+</html>
