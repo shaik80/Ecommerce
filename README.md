@@ -3,5 +3,5 @@ Hi Geek,this project is built by individual in final year and database is struct
 
 ## How to setup
 + Database
-* Install SQL Server 2017
-* Copy entire querie from mydb.txt
+  * Install SQL Server 2017
+  * Copy entire querie from mydb.txt
