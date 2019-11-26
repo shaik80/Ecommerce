@@ -5,3 +5,6 @@ Hi Geek,this project is built by individual in final year and database is struct
 + Database
   * Install SQL Server 2017
   * Copy entire querie from mydb.txt
++ Front end
+  * Install visual studio 2017
+  * 
