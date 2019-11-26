@@ -7,4 +7,4 @@ Hi Geek,this project is built by individual in final year and database is struct
   * Copy entire querie from mydb.txt
 + Front end
   * Install visual studio 2017
-  * 
+  *  go inside path `Ecommerce_MVC_Core/Ecommerce_MVC_Core` and open project
