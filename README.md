@@ -11,4 +11,8 @@ Hi Geek,this project is built by individual in final year and database is struct
   * go inside path `Ecommerce_MVC_Core/Ecommerce_MVC_Core` and open project or click `Ecommerce_MVC_Core.sln`
   * connect to db in `Visual Studio 2017`
   * Run project on Visual Studio 2017
-## How to run
+  
+## How to login with Admin
+Admin and customer has same login page
+* Admin can login with User:`admin@gmail.com` and password:`1234567890`
+* User can register and then he can login 
